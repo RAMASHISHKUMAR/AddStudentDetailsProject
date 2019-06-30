@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C0F9C32"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/txtview_registration_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text=" Registration Form "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtview1_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtview_registration_form"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:text="Name : "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtview2_mobno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtview1_name"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:text="Mob No : "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtview3_clg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtview2_mobno"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:text="College : "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtview4_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtview3_clg"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:text="Address : "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_submit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtview4_add"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Submit" />
+
+    <EditText
+        android:id="@+id/edt1_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtview_registration_form"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/txtview1_name"
+        android:hint="enter name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edt2_mobno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt1_name"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/txtview2_mobno"
+        android:hint="enter mobile no"
+        android:inputType="phone"
+        android:maxLength="10" />
+
+    <EditText
+        android:id="@+id/edt3_clg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt2_mobno"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@id/txtview3_clg"
+        android:hint="enter college"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edt4_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt3_clg"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/txtview4_add"
+        android:hint="enter address"
+        android:maxLines="1" />
+
+
+</RelativeLayout>
